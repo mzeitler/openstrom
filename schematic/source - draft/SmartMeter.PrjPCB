@@ -127,13 +127,13 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document7]
-DocumentPath=Sheet4.SchDoc
+DocumentPath=C:\Users\Public\Documents\Altium\AD13\Library\WS-PBTL_rev15a\WS-PBTL.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=4
+AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -143,7 +143,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document8]
-DocumentPath=SMLib.SchLib
+DocumentPath=C:\Users\Public\Documents\Altium\AD13\Library\WE-RJ45_LAN_rev16b\WE-RJ45_LAN.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -159,7 +159,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document9]
-DocumentPath=SM01.PcbLib
+DocumentPath=SMLib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -175,7 +175,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document10]
-DocumentPath=PCB1.PcbDoc
+DocumentPath=SM01.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -191,7 +191,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document11]
-DocumentPath=PcbLib2.PcbLib
+DocumentPath=PCB1.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -207,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document12]
-DocumentPath=SmartMeter.OutJob
+DocumentPath=PcbLib2.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -223,7 +223,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document13]
-DocumentPath=Schlib1.SchLib
+DocumentPath=SmartMeter.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -239,7 +239,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document14]
-DocumentPath=Schlib2.SchLib
+DocumentPath=Schlib1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -255,7 +255,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document15]
-DocumentPath=PcbLib1.PcbLib
+DocumentPath=Schlib2.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -271,7 +271,71 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document16]
+DocumentPath=PcbLib1.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document17]
 DocumentPath=PcbLib4.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document18]
+DocumentPath=C:\Users\Public\Documents\Altium\AD13\Library\WS-PBTL_rev15a.intlib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document19]
+DocumentPath=C:\Users\Public\Documents\Altium\AD13\Library\WE-RJ45_LAN_rev16b.intlib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document20]
+DocumentPath=SmartMeter.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -295,9 +359,6 @@ CurrentRevision=
 Variant=[No Variations]
 GenerateBOM=1
 OutputJobsCount=0
-
-[Generic_EDE]
-OutputDir=ProjectOutputs
 
 [Generic_SmartPDF]
 AutoOpenFile=-1
@@ -332,6 +393,9 @@ SCH_ExpandSheetNumber=0
 SCH_ExpandDocumentNumber=0
 SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
+
+[Generic_EDE]
+OutputDir=ProjectOutputs
 
 [OutputGroup1]
 Name=Netlist Outputs
