@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=VCC=5.0V Pin=K1-3
+Removed Pin From Net: NetName=NetD3_1 Pin=K1-4
+Change Component DesignItemId : Designator=K1 Old DesignItemId=Relay-SPST New DesignItemId=Relay-SPDT
+Change Component Comment : Designator=K1 Old Comment=JQX-16F New Comment=Relay-SPDT
+Change Component Description : Designator=K1 Old Description=Single-Pole Single-Throw Relay New Description=Single-Pole Dual-Throw Relay
+Added Pin To Net: NetName=VCC=5.0V Pin=J3-1
+Added Pin To Net: NetName=VCC=5.0V Pin=K1-1
+Added Pin To Net: NetName=VCC=5.0V Pin=K1-4

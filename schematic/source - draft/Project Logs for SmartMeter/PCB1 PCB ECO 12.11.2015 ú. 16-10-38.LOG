@@ -1,0 +1,25 @@
+Removed Member From Class: ClassName=Sheet2 Member=C61
+Removed Member From Class: ClassName=Sheet2 Member=C62
+Removed Member From Class: ClassName=Sheet2 Member=D19
+Added Component: Designator=R78(Shunt)
+Added Component: Designator=R88(Shunt)
+Added Component: Designator=R98(Shunt)
+Added Component: Designator=R108(Shunt)
+Added Pin To Net: NetName=NetK7_2 Pin=R78-1
+Added Pin To Net: NetName=NetR78_2 Pin=R78-2
+Added Pin To Net: NetName=NetK8_2 Pin=R88-1
+Added Pin To Net: NetName=NetR88_2 Pin=R88-2
+Added Pin To Net: NetName=NetK9_2 Pin=R98-1
+Added Pin To Net: NetName=NetR98_2 Pin=R98-2
+Added Pin To Net: NetName=NetK10_2 Pin=R108-1
+Added Pin To Net: NetName=NetR108_2 Pin=R108-2
+Added Member To Class: ClassName=Sheet2 Member=Component C21 4.7uF
+Added Member To Class: ClassName=Sheet2 Member=Component C58 10n
+Added Member To Class: ClassName=Sheet3 Member=Component C60 4.7uF
+Added Member To Class: ClassName=Sheet3 Member=Component C61 4.7uF
+Added Member To Class: ClassName=Sheet2 Member=Component D4 1N4001
+Added Member To Class: ClassName=Sheet3 Member=Component D16 1N4001
+Added Member To Class: ClassName=Sheet3 Member=Component R78 0.001 /2W
+Added Member To Class: ClassName=Sheet3 Member=Component R88 0.001 /2W
+Added Member To Class: ClassName=Sheet3 Member=Component R98 0.001 /2W
+Added Member To Class: ClassName=Sheet3 Member=Component R108 0.001 /2W

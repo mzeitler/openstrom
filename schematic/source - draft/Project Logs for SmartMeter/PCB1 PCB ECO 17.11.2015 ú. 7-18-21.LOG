@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetC5_1 Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=NetC5_1 Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Added Component: Designator=C5(0805C-TBD)
+Added Component: Designator=C6(0805C-TBD)
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=NetC5_1 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Member To Class: ClassName=Sheet1 Member=Component C5 .1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C6 .1uF

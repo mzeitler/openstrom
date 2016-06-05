@@ -1,0 +1,23 @@
+Removed Member From Class: ClassName=Sheet2 Member=C62
+Removed Member From Class: ClassName=Sheet2 Member=D16
+Change Component Footprint: Designator=K10 Old Footprint=JQX-16f New Footprint=MODULE4
+Added Member To Class: ClassName=Sheet2 Member=Component C38 15pF
+Added Member To Class: ClassName=Sheet2 Member=Component C39 10n
+Added Member To Class: ClassName=Sheet2 Member=Component C40 15pF
+Added Member To Class: ClassName=Sheet2 Member=Component C58 10n
+Added Member To Class: ClassName=Sheet2 Member=Component D5 LED2
+Added Member To Class: ClassName=Sheet2 Member=Component D15 LED2
+Added Member To Class: ClassName=Sheet1 Member=Component J1 PWR2.5
+Added Member To Class: ClassName=Sheet2 Member=Component Q1 MMBT2222
+Added Member To Class: ClassName=Sheet2 Member=Component R33 100K
+Added Member To Class: ClassName=Sheet2 Member=Component R34 2K
+Added Member To Class: ClassName=Sheet2 Member=Component R35 3
+Added Member To Class: ClassName=Sheet2 Member=Component R36 45
+Added Member To Class: ClassName=Sheet2 Member=Component R37 1M
+Added Member To Class: ClassName=Sheet2 Member=Component R38 1K
+Added Member To Class: ClassName=Sheet2 Member=Component TP17 TESTPOINT
+Added Member To Class: ClassName=Sheet2 Member=Component TP18 TESTPOINT
+Added Member To Class: ClassName=Sheet2 Member=Component TP19 TESTPOINT
+Added Member To Class: ClassName=Sheet2 Member=Component TP20 TESTPOINT
+Added Member To Class: ClassName=Sheet2 Member=Component TP21 TESTPOINT
+Added Member To Class: ClassName=Sheet2 Member=Component Y3 16Mhz

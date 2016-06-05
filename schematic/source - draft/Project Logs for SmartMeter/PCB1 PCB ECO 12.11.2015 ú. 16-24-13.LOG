@@ -1,0 +1,29 @@
+Removed Member From Class: ClassName=Sheet2 Member=C61
+Removed Member From Class: ClassName=Sheet2 Member=C62
+Removed Member From Class: ClassName=Sheet2 Member=D19
+Change Component Footprint: Designator=U5 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U7 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U9 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U11 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U12 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U14 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U15 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U17 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U18 Old Footprint=SOP5(6) New Footprint=4N25
+Change Component Footprint: Designator=U20 Old Footprint=SOP5(6) New Footprint=4N25
+Added Pin To Net: NetName=NetD5_1 Pin=U5-2
+Added Pin To Net: NetName=NetD7_1 Pin=U7-2
+Added Pin To Net: NetName=NetD9_1 Pin=U9-2
+Added Pin To Net: NetName=NetD11_1 Pin=U11-2
+Added Pin To Net: NetName=NetD13_1 Pin=U12-2
+Added Pin To Net: NetName=NetD15_1 Pin=U14-2
+Added Pin To Net: NetName=NetD17_1 Pin=U15-2
+Added Pin To Net: NetName=NetD19_1 Pin=U17-2
+Added Pin To Net: NetName=NetD21_1 Pin=U18-2
+Added Pin To Net: NetName=NetD23_1 Pin=U20-2
+Added Member To Class: ClassName=Sheet2 Member=Component C20 4.7uF
+Added Member To Class: ClassName=Sheet2 Member=Component C21 4.7uF
+Added Member To Class: ClassName=Sheet3 Member=Component C60 4.7uF
+Added Member To Class: ClassName=Sheet3 Member=Component C61 4.7uF
+Added Member To Class: ClassName=Sheet2 Member=Component D4 1N4001
+Added Member To Class: ClassName=Sheet3 Member=Component D16 1N4001

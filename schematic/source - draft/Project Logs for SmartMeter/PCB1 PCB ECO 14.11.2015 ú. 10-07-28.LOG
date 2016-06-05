@@ -1,0 +1,14 @@
+Change Component Footprint: Designator=R64 Old Footprint=J1-0603 New Footprint=0805R-2K2
+Change Component Footprint: Designator=R60 Old Footprint=J1-0603 New Footprint=0805R-10
+Change Component Footprint: Designator=R53 Old Footprint=J1-0603 New Footprint=1210R-GENERIC
+Change Component Footprint: Designator=R56 Old Footprint=J1-0603 New Footprint=1210R-GENERIC
+Change Component Footprint: Designator=R58 Old Footprint=J1-0603 New Footprint=1210R-GENERIC
+Change Component Footprint: Designator=K2 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K3 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K4 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K5 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K6 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K7 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K8 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K9 Old Footprint=JQX-16f New Footprint=MODULE5B
+Change Component Footprint: Designator=K10 Old Footprint=JQX-16f New Footprint=MODULE5B

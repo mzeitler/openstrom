@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=NetC5_1 Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=NetC5_1 Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=VCC=3.3V Pin=R52-1
+Removed Pin From Net: NetName=NetR52_2 Pin=R52-2
+Removed Pin From Net: NetName=NetR56_1 Pin=R56-1
+Removed Pin From Net: NetName=NetQ4_B Pin=R56-2
+Removed Pin From Net: NetName=GND Pin=R58-1
+Removed Pin From Net: NetName=NetQ4_B Pin=R58-2
+Removed Pin From Net: NetName=VCC=3.3V Pin=R80-1
+Removed Pin From Net: NetName=NetR80_2 Pin=R80-2
+Removed Pin From Net: NetName=NetR84_1 Pin=R84-1
+Removed Pin From Net: NetName=NetQ7_B Pin=R84-2
+Change Component Footprint: Designator=R20 Old Footprint=Shunt New Footprint=0805R-10
+Change Component Footprint: Designator=R29 Old Footprint=Shunt New Footprint=0805R-10
+Change Component Footprint: Designator=R40 Old Footprint=Shunt New Footprint=0805R-10
+Change Component Footprint: Designator=R62 Old Footprint=Shunt New Footprint=0805R-10
+Change Component Footprint: Designator=R72 Old Footprint=Shunt New Footprint=0805R-10
+Change Component Footprint: Designator=R78 Old Footprint=Shunt New Footprint=0805R-10
+Change Component Footprint: Designator=R88 Old Footprint=Shunt New Footprint=0805R-10
+Change Component Footprint: Designator=R108 Old Footprint=Shunt New Footprint=0805R-10
+Added Component: Designator=C5(0805C-TBD)
+Added Component: Designator=C6(0805C-TBD)
+Added Component: Designator=R52(0805R-2K7)
+Added Component: Designator=R56(0805R-2K7)
+Added Component: Designator=R58(0805R-1K)
+Added Component: Designator=R80(0805R-10)
+Added Component: Designator=R84(0805R-100)
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=NetC5_1 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=VCC=3.3V Pin=R52-1
+Added Pin To Net: NetName=NetR52_2 Pin=R52-2
+Added Pin To Net: NetName=NetR56_1 Pin=R56-1
+Added Pin To Net: NetName=NetQ4_B Pin=R56-2
+Added Pin To Net: NetName=GND Pin=R58-1
+Added Pin To Net: NetName=NetQ4_B Pin=R58-2
+Added Pin To Net: NetName=VCC=3.3V Pin=R80-1
+Added Pin To Net: NetName=NetR80_2 Pin=R80-2
+Added Pin To Net: NetName=NetR84_1 Pin=R84-1
+Added Pin To Net: NetName=NetQ7_B Pin=R84-2
+Added Member To Class: ClassName=Sheet1 Member=Component C5 .1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C6 .1uF
+Added Member To Class: ClassName=Sheet2 Member=Component R52 45
+Added Member To Class: ClassName=Sheet2 Member=Component R56 470
+Added Member To Class: ClassName=Sheet2 Member=Component R58 2K
+Added Member To Class: ClassName=Sheet3 Member=Component R80 45
+Added Member To Class: ClassName=Sheet3 Member=Component R84 470

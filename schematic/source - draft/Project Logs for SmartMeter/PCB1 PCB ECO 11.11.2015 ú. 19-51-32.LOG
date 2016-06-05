@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=K2 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K3 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K4 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K5 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K6 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K7 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K8 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K9 Old Footprint=MODULE4 New Footprint=JQX-16f
+Change Component Footprint: Designator=K10 Old Footprint=MODULE4 New Footprint=JQX-16f
+Added Component: Designator=U6(QFN64_N)
+Added Component: Designator=U23(32QN2_N)

@@ -1,0 +1,26 @@
+Added Component: Designator=Q1(TO-92A)
+Added Component: Designator=Q2(TO-92A)
+Added Component: Designator=Q3(TO-92A)
+Added Component: Designator=Q4(TO-92A)
+Added Pin To Net: NetName=GND Pin=Q2-1
+Added Pin To Net: NetName=GND Pin=Q4-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q2-2
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Net: Name=NetQ1_2
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=Q2-3
+Added Pin To Net: NetName=NetQ1_3 Pin=Q3-2
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_1 Pin=Q4-2
+Added Net: Name=NetQ3_1
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_3 Pin=Q4-3
+Added Net: Name=NetQ3_3
+Added Class: Name=Sheet1
+Added Class: Name=Sheet2
+Added Room: Name=Sheet1
+Added Room: Name=Sheet2

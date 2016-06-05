@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=R22 Old Footprint=J1-0603 New Footprint=0805R-1K
+Change Component Footprint: Designator=R19 Old Footprint=J1-0603 New Footprint=0805R-10
+Change Component Footprint: Designator=R24 Old Footprint=J1-0603 New Footprint=1210C-GENERIC
+Change Component Footprint: Designator=R25 Old Footprint=J1-0603 New Footprint=1210C-GENERIC
+Change Component Footprint: Designator=R21 Old Footprint=J1-0603 New Footprint=1210R-GENERIC
