@@ -303,7 +303,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document18]
-DocumentPath=CPU-board-multi.PcbDoc
+DocumentPath=CPU-board-multi-Ethernnet.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -343,10 +343,22 @@ DocumentPath=ProjectOutputs\Design Rule Check - Copy of CPU-board-multi2.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=ProjectOutputs\Design Rule Check - CPU-board-multi2.html
+DocumentPath=ProjectOutputs\Design Rule Check - Copy of CPU-board-multi-new.html
 DItemRevisionGUID=
 
 [GeneratedDocument4]
+DocumentPath=ProjectOutputs\Design Rule Check - CPU-board-multi2.html
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=ProjectOutputs\Design Rule Check - CPU-board-multi-new.html
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=ProjectOutputs\Design Rule Check - CPU-board-multi.html
+DItemRevisionGUID=
+
+[GeneratedDocument7]
 DocumentPath=ProjectOutputs\Net Status - CPU-board-multi2.html
 DItemRevisionGUID=
 
