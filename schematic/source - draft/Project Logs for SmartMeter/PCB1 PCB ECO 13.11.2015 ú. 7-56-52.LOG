@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=NetD5_1 Pin=K2-1
-Removed Pin From Net: NetName=VCC=5.0V Pin=K2-2
-Removed Pin From Net: NetName=NetK2_2 Pin=K2-3
-Removed Pin From Net: NetName=NetJ4_1 Pin=K2-4
-Added Pin To Net: NetName=NetJ4_1 Pin=K2-1
-Added Pin To Net: NetName=NetK2_2 Pin=K2-2
-Added Pin To Net: NetName=VCC=5.0V Pin=K2-3
-Added Pin To Net: NetName=NetD5_1 Pin=K2-4
