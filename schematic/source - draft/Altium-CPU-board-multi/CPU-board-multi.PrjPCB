@@ -335,7 +335,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document20]
-DocumentPath=Cross-sectionCPU-sketch3.PcbDoc
+DocumentPath=CPU-board-multi.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -351,7 +351,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document21]
-DocumentPath=Cross-section-sketch2.PcbDoc
+DocumentPath=CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -367,23 +367,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document22]
-DocumentPath=..\..\SmartMeter-AltiumProject-03\SM-sketch.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document23]
-DocumentPath=CPU-board-multi.PcbDoc
+DocumentPath=CAMtastic2.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -423,83 +407,79 @@ DocumentPath=ProjectOutputs\CPU-board-multi.G2
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=ProjectOutputs\CPU-board-multi.G3
-DItemRevisionGUID=
-
-[GeneratedDocument8]
 DocumentPath=ProjectOutputs\CPU-board-multi.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument8]
 DocumentPath=ProjectOutputs\CPU-board-multi.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument9]
 DocumentPath=ProjectOutputs\CPU-board-multi.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument11]
+[GeneratedDocument10]
 DocumentPath=ProjectOutputs\CPU-board-multi.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument12]
+[GeneratedDocument11]
 DocumentPath=ProjectOutputs\CPU-board-multi.GD1
 DItemRevisionGUID=
 
-[GeneratedDocument13]
-DocumentPath=ProjectOutputs\CPU-board-multi.GD2
-DItemRevisionGUID=
-
-[GeneratedDocument14]
+[GeneratedDocument12]
 DocumentPath=ProjectOutputs\CPU-board-multi.GG1
 DItemRevisionGUID=
 
-[GeneratedDocument15]
-DocumentPath=ProjectOutputs\CPU-board-multi.GG2
-DItemRevisionGUID=
-
-[GeneratedDocument16]
+[GeneratedDocument13]
 DocumentPath=ProjectOutputs\CPU-board-multi.GKO
 DItemRevisionGUID=
 
-[GeneratedDocument17]
+[GeneratedDocument14]
 DocumentPath=ProjectOutputs\CPU-board-multi.GP1
 DItemRevisionGUID=
 
-[GeneratedDocument18]
+[GeneratedDocument15]
+DocumentPath=ProjectOutputs\CPU-board-multi.GP2
+DItemRevisionGUID=
+
+[GeneratedDocument16]
 DocumentPath=ProjectOutputs\CPU-board-multi.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument19]
+[GeneratedDocument17]
 DocumentPath=ProjectOutputs\CPU-board-multi.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument20]
+[GeneratedDocument18]
 DocumentPath=ProjectOutputs\CPU-board-multi.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument21]
+[GeneratedDocument19]
 DocumentPath=ProjectOutputs\CPU-board-multi.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument22]
+[GeneratedDocument20]
 DocumentPath=ProjectOutputs\CPU-board-multi.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument23]
+[GeneratedDocument21]
 DocumentPath=ProjectOutputs\CPU-board-multi.REP
 DItemRevisionGUID=
 
-[GeneratedDocument24]
+[GeneratedDocument22]
 DocumentPath=ProjectOutputs\CPU-board-multi.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument25]
-DocumentPath=ProjectOutputs\CPU-board-multi.TX1
+[GeneratedDocument23]
+DocumentPath=ProjectOutputs\CPU-board-multi.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument26]
-DocumentPath=ProjectOutputs\CPU-board-multi.TXT
+[GeneratedDocument24]
+DocumentPath=ProjectOutputs\Design Rule Check - CPU-board-multi.html
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=ProjectOutputs\new-CPU-board-multi.xls
 DItemRevisionGUID=
 
 [Configuration1]
@@ -780,7 +760,7 @@ OutputDefault12=0
 PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
 OutputType13=Schematic Print
 OutputName13=Schematic Prints
-OutputDocumentPath13=D:\SmartMeter-AltiumProject\SM-CPU-board\CPU-board-Sheet2-multi.SchDoc
+OutputDocumentPath13=D:\SmartMeter-AltiumProject\SM-CPU-board\CPU-board-Sheet1-multi.SchDoc
 OutputVariantName13=
 OutputDefault13=0
 PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
@@ -1076,7 +1056,7 @@ OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
 Configuration5_Name1=OutputConfigurationParameter1
-Configuration5_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=3|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
+Configuration5_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=4|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
 OutputType6=ODB
 OutputName6=ODB++ Files
 OutputDocumentPath6=
@@ -1099,51 +1079,51 @@ OutputDocumentPath9=
 OutputVariantName9=[No Variations]
 OutputDefault9=0
 Configuration9_Name1=OutputConfigurationParameter1
-Configuration9_Item1=AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NumberOfDecimals=3|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16777220~1,16777218~1,16777219~1,16842753~1,16842751~1,16973835~1,16973833~1,16973831~1,16973837~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False
+Configuration9_Item1=AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842754~1,16777219~1,16777221~1,16842753~1,16842751~1,16973835~1,16973833~1,16973831~1,16973837~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False
 
 [OutputGroup6]
 Name=Report Outputs
 Description=
 TargetPrinter=Wondershare PDFelement
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
-OutputType1=Script
-OutputName1=Script Output
+OutputType1=BOM_PartType
+OutputName1=Bill of Materials
 OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
-OutputType2=SimpleBOM
-OutputName2=Simple BOM
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
+Configuration1_Name1=Filter
+Configuration1_Item1=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration1_Name2=General
+Configuration1_Item2=OpenExported=False|AddToProject=True|ForceFit=False|NotFitted=False|Database=False|IncludePCBData=False|IncludeVaultData=False|ShowExportOptions=True|TemplateFilename=|BatchMode=5|FormWidth=1271|FormHeight=653|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration1_Name3=GroupOrder
+Configuration1_Item3=Comment=True|Footprint=True
+Configuration1_Name4=SortOrder
+Configuration1_Item4=Designator=Up|Comment=Up|Footprint=Up
+Configuration1_Name5=VisibleOrder
+Configuration1_Item5=Comment=91|Designator=425|Price=35|Quantity=20|Manufacturer=48|Suppl.PN#=49|Supplier=36|Mfr.PN#=51|PackageReference=20
+OutputType2=ComponentCrossReference
+OutputName2=Component Cross Reference Report
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
-OutputType3=SinglePinNetReporter
-OutputName3=Report Single Pin Nets
+OutputType3=ReportHierarchy
+OutputName3=Report Project Hierarchy
 OutputDocumentPath3=
 OutputVariantName3=[No Variations]
 OutputDefault3=0
-OutputType4=BOM_PartType
-OutputName4=Bill of Materials
+OutputType4=Script
+OutputName4=Script Output
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
-PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
-Configuration4_Name1=Filter
-Configuration4_Item1=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
-Configuration4_Name2=General
-Configuration4_Item2=OpenExported=False|AddToProject=True|ForceFit=False|NotFitted=False|Database=False|IncludePCBData=False|IncludeVaultData=False|ShowExportOptions=True|TemplateFilename=|BatchMode=5|FormWidth=1271|FormHeight=718|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
-Configuration4_Name3=GroupOrder
-Configuration4_Item3=Comment=True|Footprint=True
-Configuration4_Name4=SortOrder
-Configuration4_Item4=Designator=Up|Comment=Up|Footprint=Up
-Configuration4_Name5=VisibleOrder
-Configuration4_Item5=Comment=91|Designator=425|Price=35|Quantity=20|Manufacturer=48|Suppl.PN#=49|Supplier=36|Mfr.PN#=51|PackageReference=20
-OutputType5=ComponentCrossReference
-OutputName5=Component Cross Reference Report
+OutputType5=SimpleBOM
+OutputName5=Simple BOM
 OutputDocumentPath5=
 OutputVariantName5=[No Variations]
 OutputDefault5=0
-OutputType6=ReportHierarchy
-OutputName6=Report Project Hierarchy
+OutputType6=SinglePinNetReporter
+OutputName6=Report Single Pin Nets
 OutputDocumentPath6=
 OutputVariantName6=[No Variations]
 OutputDefault6=0
