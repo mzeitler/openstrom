@@ -1,0 +1,37 @@
+
+Smat meter test programs for Ethernet,WiFi and Zigbee modules 
+
+
+1. For Ehernet module
+
+	Ethernet module is built on the Microchip PIC32MXF0512H and Microchip PHY LAN8720A
+
+
+
+
+2. For WiFi module 
+
+	WiFi module is realized by Espressif ESP-WROOM-2this module is connected to the PIc32MXF0512H by UART RS-232 interface
+
+	The test prorams that are developed at the moment are:
+
+	- SM-wifi-sta-tcp-client for the mode STATION;
+
+	- SM-wifi-ap-tcp-client fot the mode ACCESS POINT;
+
+All these source files can be find in the dropbox folder Wifi_Test_Ppograms
+
+As a basic IDE is use Eclipse. As a approuch how to create Wifi applications program can be find in the link
+
+
+	https://www.penninkhof.com/2015/06/esp8266-programming-from-eclipse/
+
+
+
+
+3. Zigbee Module 
+
+	ZigBee is a Microchip MFR24J40MA. This module is conneccted to the main microcontroller PIc32mxF0512H by the SDI interface
+	The basic sources for futher development can be find in the Dropbox folder - Zigbee Application programs
+
+https://www.penninkhof.com/2015/06/esp8266-programming-from-eclipse/
