@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <plib.h>
 #include <p32xxxx.h>
+#include "Relay.h"
 #include <math.h>
 
 
@@ -23,13 +24,16 @@
 
 
 /*----------------Declare Function prototypes------------------------*/
-void Init_Relays(void);
+/*
+void Init_Relays(void);                             //  moved in Relay.h
 void Switch_ON_Relay(IoPortId port,unsigned int relay);
 void Relay_Delay(void);
+   */
 /*-------------------Declare Global variables------------------*/
 unsigned int delayValue;
-/*-------------------Declare macros*/
-#define switch_Rl1(_var) (PORTFbits.RF1=_var)
+/*-------------------Declare macros--------------------------*/
+/*
+#define switch_Rl1(_var) (PORTFbits.RF1=_var)   //  moved in Relay.h
 #define switch_Rl2(_var) (PORTFbits.RF0=_var)
 #define switch_Rl3(_var) (PORTDbits.RD7=_var)
 #define switch_Rl4(_var) (PORTDbits.RD6=_var)
@@ -39,9 +43,11 @@ unsigned int delayValue;
 #define switch_Rl8(_var) (PORTCbits.RC13=_var)
 #define switch_Rl9(_var) (PORTBbits.RB8=_var)
 #define switch_Rl10(_var) (PORTBbits.RB7=_var)
-
-#pragma config FPLLMUL = MUL_20, FPLLIDIV = DIV_2, FPLLODIV = DIV_1, FWDTEN = OFF
-#pragma config POSCMOD = HS, FNOSC = PRIPLL, FPBDIV = DIV_1
+*/
+#pragma config FPLLMUL = MUL_20
+#pragma configig FPLLIDIV = DIV_2, FPLLODIV = DIV_1, FWDTEN = OFF
+//#pragma config POSCMOD = XT, FNOSC = PRIPLL, FPBDIV = DIV_1
+#pragma config FNOSC=FRCPLL,POSCMOD=OFF,ICESEL=ICS_PGx1
  /* -------------------------------------------------*/
  /*                    Relays connections description               */
  /*                                                                 */
@@ -64,12 +70,14 @@ int j=0;
 int main(void)
 {
     unsigned i,j;
-    
+  
+   // OSCCONbits.SOSCEN=0;            //Disable Secondary Oscillator
      Init_Relays();
-   
-    while(1){
-           
-        
+     Switch_ON_Relay(IOPORT_C,BIT_1);
+     
+     
+     while(1){
+         
            switch_Rl1(1); 
            switch_Rl2(1);
            switch_Rl3(1);
@@ -80,6 +88,7 @@ int main(void)
            switch_Rl8(1);
            switch_Rl9(1);
            switch_Rl10(1);
+           
            Relay_Delay();            //delay=4ms
            switch_Rl1(0); 
            switch_Rl2(0);
@@ -91,33 +100,28 @@ int main(void)
            switch_Rl8(0);
            switch_Rl9(0);
            switch_Rl10(0);
-           Relay_Delay();            //delay=4ms
-        
          
+           Relay_Delay();            //delay=4ms
+     
     }
    
 }
 
 void Init_Relays(void)
 {
-    //1.Option 1 
+    
+      RtccShutdown();                                  //enable RC13&RC14 to be configure as I/O
       mPORTFSetPinsDigitalOut(BIT_0|BIT_1);            //init Relays K1&K2
       mPORTDSetPinsDigitalOut(BIT_4|BIT_5|BIT_6|BIT_7);//init Relays K2...K6
       mPORTCSetPinsDigitalOut(BIT_13|BIT_14);           //init Relays K7&K8
       mPORTBSetPinsDigitalOut(BIT_8|BIT_7);            //init Relays K9&K10
-    //2. Option 2
-     
-     // TRISB=0x0;
-     // TRISF=0x0;
-     // TRISD=0x0;
-     // TRISC=0x0;
-      
-      
+          
 }
 void Switch_ON_Relay(IoPortId port,unsigned int relay)
 {
+    
     PORTWrite(port,relay);
-    switch_Rl1(1);        
+       
 }
 void Relay_Delay(void)
 {
