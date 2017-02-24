@@ -23,15 +23,15 @@ void  Init_SPI_module();
 void SendFrame(char readAdd,char wrireAdd, char dataLSB,char dataMSB);
 //----SPI Buffer for sending frames to configurate STPM registers-------//
 // Structure of the frame:  
-//          ReadAdd(1byte);				//
+/*          ReadAdd(1byte);				    */
 /*			WriteAdd(1Byte);				*/
 /*			LSData[7:0];					*/
 /*			MSData[15:8]					*/			
 /*----------------------------------------------------------------------*/
- //char sendBuff[4]={0x0f,0x0f,0x0f,0x0f};
+ //char sendBuff[4]={0x0f,0x0f,0x0f,0x0f};  //an example 
  
 
-/*------Definition structure for DSP CR1 LSB register STMP32----------*/
+/*------Structure definition for DSP CR1 LSB register STMP32----------*/
 /*  Row:     0                                                        */
 /*  Address: 0x00                                                     */
 /*  Name:    DSP_CR1_LSW[15:0]                                        */
@@ -65,7 +65,7 @@ typedef union{
 //extern volatile DSP_CR100bits_t DSP_CR100bits  __asm__ ("DSP_CR100") __attribute__((section("sfrs")));
 /*-----------------------------------------------------------------------*/
 
-/*------Definition structure for DSP CR1 MSB register STMP32----------------*/
+/*------Structure definition for DSP CR1 MSB register STMP32----------------*/
 /*  Row:     1                                                              */
 /*  Address: 0x01                                                           */
 /*  Name:    DSP_CR1 MSW[31:16]                                             */
@@ -116,7 +116,7 @@ typedef union{
 } DSP_CR101bits_t;
 
 
-/*------Definition structure for DSP CR2 LSB register STMP32----------*/
+/*------Structure definition for DSP CR2 LSB register STMP32----------*/
 /*  Row:     01                                                        */
 /*  Address: 0x02                                                     */
 /*  Name:    DSP_CR2_LCW[15:0]                                        */
@@ -148,7 +148,7 @@ typedef union{
 } DSP_CR200bits_t;
 /*-----------------------------------------------------------------------*/
 
-/*------Definition structure for DSP CR1 MSB register STMP32----------------*/
+/*------Structure definition for DSP CR2 MSB register STMP32----------------*/
 /*  Row:     01                                                              */
 /*  Address: 0x03                                                           */
 /*  Name:    DSP_CR2 MSW[31:16]                                             */
@@ -201,7 +201,7 @@ typedef union{
 
 /*-----------------------------------------------------------------------*/
 
-/*------Definition structure for DSP CR3 register STMP32-----------------*/
+/*------Structure definition for DSP CR3 register STMP32-----------------*/
 /*  Row:     2                                                           */
 /*  Address: 04                                                          */
 /*  Name:    DSP_CR3 LSW[15:0]                                           */
@@ -211,7 +211,7 @@ typedef union{
     
    	 struct{
 		unsigned SAG_TIME_THR	:14;
-		unsigned ZCR_SEL	:2;
+		unsigned ZCR_SEL	:2;             //Selection bits for ZCR/CLK pin
 	};
 	
 	struct{
@@ -227,7 +227,7 @@ typedef union{
 	};
 }DSP_CR300bits_t;
 
-/*------Definition structure for DSP CR3 register STMP32-----------------*/
+/*------Structure definition for DSP CR3 register STMP32-----------------*/
 /*  Row:     2                                                           */
 /*  Address: 05                                                          */
 /*  Name:    DSP_CR3 MSW[31:16]                                          */
@@ -266,9 +266,38 @@ typedef union{
 }DSP_CR301bits_t;
 	
 /*-----------------------------------------------------------------------*/
+/*------Structure definition for DSP CR4 register STMP32-----------------*/
+/*  Row:     3                                                           */
+/*  Address: 05                                                          */
+/*  Name:    DSP_CR3 LSW[21:0]                                           */
+/*  Default: 0x0000                                                      */
+
+typedef union{
+    
+   	 struct{
+		unsigned PHC2	:10;
+		unsigned PHV2	:2; 
+        unsigned PHC1   :10;
+        unsigned PHV1   :2;
+	};
+	
+	struct{
+        unsigned w      :24;
+	};
+
+	struct{
+		unsigned short Address;
+
+	};
+}DSP_CR400bits_t;
 
 
-/*------Definition structure for DFE CR1 register STMP32-----------------*/
+
+
+
+
+ 
+/*------Structure definition for DFE CR1 register STMP32-----------------*/
 /*  Row:     12                                                          */
 /*  Address: 18                                                          */
 /*  Name:    DFE_CR1 LSB[15:0]                                                    */
@@ -283,7 +312,7 @@ typedef union{
 }DFE_CR100bits_t;
 
 
-/*------Definition structure for DFE CR1 register STMP32-----------------*/
+/*------Structure definition for DFE CR1 register STMP32-----------------*/
 /*  Row:     12                                                          */
 /*  Address: 19                                                         */
 /*  Name:    DFE_CR1 MSW[31:16]                                                    */
@@ -309,7 +338,7 @@ typedef union{
 
 
 
-/*------Definition structure for DFE CR2 register STMP32-----------------*/
+/*------Structure definition for DFE CR2 register STMP32-----------------*/
 /*  Row:     13                                                          */
 /*  Address: 1B                                                          */
 /*  Name:    DFE_CR2 MSW[31:16]                                                 */
@@ -341,7 +370,7 @@ typedef union{
 
 
 
-/*------Definition structure for PH1 REG3 register STMP32-----------------*/
+/*------Structure definition for PH1 REG3 register STMP32-----------------*/
 /*  Row: 44                                                               */
 /*  Address: 58                                                           */
 /*  Name:    PH1_REG3- PH1 Reactive Energy                                */
@@ -353,7 +382,7 @@ typedef struct{
 	unsigned short Address;
 }PH1_ReactEvergy_t;
 
-/*------Definition structure for PH1 REG4 register STMP32-----------------*/
+/*------Structure definition for PH1 REG4 register STMP32-----------------*/
 /*  Row: 45                                                               */
 /*  Address: 5A                                                           */
 /*  Name:    PH1_REG4- PH1 Apparent Energy                                */
@@ -365,7 +394,7 @@ typedef struct{
 	unsigned short Address;
 }__PH1_AppartEvergy;	
 
-/*------Definition structure for PH1 REG5 register STMP32-----------------*/
+/*------Structure definition for PH1 REG5 register STMP32-----------------*/
 /*  Row: 46                                                               */
 /*  Address: 5C                                                           */
 /*  Name:    PH1_REG5- PH1 Active Power [28;0]                            */
@@ -377,7 +406,7 @@ typedef struct{
 	unsigned short Address;
 }PH1_ActivePower_t;
 
-/*------Definition structure for PH1 REG6 register STMP32-----------------*/
+/*------Structure definition for PH1 REG6 register STMP32-----------------*/
 /*  Row: 47                                                               */
 /*  Address: 5E                                                           */
 /*  Name:    PH1_REG6- PH1 Fund Power [28;0]                            */
@@ -389,7 +418,7 @@ typedef struct{
 	unsigned short Address;
 }PH1_FundPower_t;
 
-/*------Definition structure for PH1 REG7 register STMP32-----------------*/
+/*------Structure definition for PH1 REG7 register STMP32-----------------*/
 /*  Row: 48                                                               */
 /*  Address: 60                                                          */
 /*  Name:    PH1_REG7- PH1 Reactive Power [28;0]                            */
@@ -401,7 +430,7 @@ typedef struct{
 	unsigned short Address;
 }PH1_ReactPower_t;
 
-/*------Definition structure for PH1 REG8 register STMP32-----------------*/
+/*------Structure definition for PH1 REG8 register STMP32-----------------*/
 /*  Row: 49                                                              */
 /*  Address: 62                                                           */
 /*  Name:    PH1_REG8- PH1 Apparent Power [28;0]                            */
@@ -413,7 +442,7 @@ typedef struct{
 	unsigned short Address;
 }PH1_AppartPower_t;
 
-/*------Definition structure for PH2 REG1 register STMP32-----------------*/
+/*------Structure definition for PH2 REG1 register STMP32-----------------*/
 /*  Row: 54                                                               */
 /*  Address: 6C                                                           */
 /*  Name:    PH2_REG1- PH2 Active Power [28:0]                            */
@@ -425,7 +454,7 @@ typedef struct{
 	unsigned short Address;
 }PH2_ActivePower_t;
 
-/*------Definition structure for PH2 REG2 register STMP32-----------------*/
+/*------Structure definition for PH2 REG2 register STMP32-----------------*/
 /*  Row: 55                                                               */
 /*  Address: 6E                                                           */
 /*  Name:    PH2_REG2- PH2 Fundamental Power [28:0]                       */
@@ -437,7 +466,7 @@ typedef struct{
 	unsigned short Address;
 }PH2_FundPower_t;
 
-/*------Definition structure for PH2 REG3 register STMP32-----------------*/
+/*------Structure definition for PH2 REG3 register STMP32-----------------*/
 /*  Row: 56                                                               */
 /*  Address: 70                                                          */
 /*  Name:    PH2_REG3- PH2 Reactive Power [28:0]                       */

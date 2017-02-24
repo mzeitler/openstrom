@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #include <plib.h>
 #include <p32xxxx.h>
-//#include "sdi.h"
+//#include <spi.h>
 #include "STPM-define.h"
 /*----------------Function prototypes -----------------------------------------*/
 
@@ -29,6 +29,10 @@ void Delay(void);
 void ReadFrame(unsigned short address, uint32_t * buffer);
 void SendFrame(char readAdd,char writeAdd, char dataLSB,char dataMSB,int port,int bits);
 void FrameDelay(void);                          
+
+//test frame code
+void TestWriteFrame();                               // only for verifying
+void TestReadFrame();
 
 
 
@@ -54,10 +58,10 @@ static uint32_t *tempbuff;
  
  /*---------------------------------------------*/
    SPI_Init();              //initialize SPI INPUT/OUTPUTS
-    while(chnSel--)
-   {    
-    Init_STPM34(chnSel);       //initialize all Sensors STPM34
-   }
+  //  while(chnSel--)
+  // {    
+  //  Init_STPM34(chnSel);       //initialize all Sensors STPM34
+  // }
    while(1)
    {
        for(i=0;i<5;i++)
@@ -116,11 +120,66 @@ static uint32_t *tempbuff;
         }
     
    
-   }
+    }
+      //1. Read Current and Voltage parameters from Chn1:
+      // - V1_Data[23:0] from dsp_reg2
+      /*------------------------------------------------------------------------*/  
+      /*  parm_Reg[0].Address=V1_Data_Address;
+        parm_Reg[0].dataBuffer=Chn_Buffer1;
+        ReadFrame(parm_Reg[0].Address,parm_Reg[0].dataBuffer);  //read voltage(V1) value from Chn1
       
-  }            // end of main 
+         
+        parm_Reg[0].Address=C1_Data_Address;
+        parm_Reg[0].dataBuffer=Chn_Buffer1;
+        ReadFrame(parm_Reg[0].Address,parm_Reg[0].dataBuffer);  //read current(C1) value from Chn1 */
+      /*------------------------------------------------------------------------*/
+       //2. Read Current and Voltage parameters from Chn2:
+      // - V2_Data[23:0] from dsp_reg4
+        
+     /* parm_Reg[1].Address=V2_Data_Address;                    //read voltage(V2) value from Chn2
+        parm_Reg[1].dataBuffer=Chn_Buffer1;
+        ReadFrame(parm_Reg[1].Address,parm_Reg[1].dataBuffer);
+        
+         
+        parm_Reg[1].Address=C2_Data_Address;                    //read current(C2) value from Chn2
+        parm_Reg[1].dataBuffer=C5hn_Buffer1;
+        ReadFrame(parm_Reg[1].Address,parm_Reg[1].dataBuffer);
+      /*------------------------------------------------------------------------*/   
+         //3. Read Fund Current and Fund Voltage parameters from Chn3:
+      // - V1_Fund[23:0] from dsp_reg6
+     /* parm_Reg[2].Address=V1_Fund_Address;                      //read voltage(V1) value from Chn3
+        parm_Reg[2].dataBuffer=Chn_Buffer3;
+        ReadFrame(parm_Reg[2].Address,parm_Reg[2].dataBuffer);    
+        
+      //-C1_Fund[23:0] from dsp reg7
+         
+         parm_Reg[2].Address=C1_Fund_Address;                     //read current(C1) value from Chn3
+         parm_Reg[2].dataBuffer=Chn_Buffer1;
+         ReadFrame(parm_Reg[2].Address,parm_Reg[2].dataBuffer);
+       /*------------------------------------------------------------------------*/
+       //2. Read Fund Current and Fund Voltage parameters from Chn4:
+      // - V2_Fund[23:0] from dsp_reg8
+        
+     /* parm_Reg[3].Address=V1_Fund_Address;
+        parm_Reg[3].dataBuffer=Chn_Buffer1;
+        ReadFrame(parm_Reg[0].Address,parm_Reg[0].dataBuffer);
+        
+         //-C2_Fund[23:0] from dsp reg9
+         
+         parm_Reg[0].Address=C2_Fund_Address;
+         parm_Reg[0].dataBuffer=Chn_Buffer1;
+         
+         // PH1 Fundamental Energy ph1_reg2
+         parm_Reg[0].Address=PH1_Fundamental_Energy_Address;
+         parm_Reg[0].dataBuffer=Chn_Buffer1;
+         ReadFrame(parm_Reg[0].Address,parm_Reg[0].dataBuffer);
+         
+    }*/
+    
+}       //  ReadFrame(parm_Reg[0].Address,parm_Reg[0].dataBuffer);
 
-/*--------------------------- SPI_Init() routine----------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
 /* PORT/pin Definitions:                                                         */
 /* En   - PIC32-pin45    RD11                                                    */
 /* CS_1 - PIC32-pin8     RG9                                                     */
@@ -347,8 +406,6 @@ void ReadFrame(unsigned short address, uint32_t *buffer)
     mPORTGSetBits(BIT_9);                       //deactivate CS1     
    
 }
-
-
 
 /*  void TestReadFrame()
  {
