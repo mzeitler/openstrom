@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=sensor1.c sensor-main.c
+SOURCEFILES_QUOTED_IF_SPACED=sensor1.c sensor-main.c D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/sensor1.o ${OBJECTDIR}/sensor-main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/sensor1.o.d ${OBJECTDIR}/sensor-main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/sensor1.o ${OBJECTDIR}/sensor-main.o ${OBJECTDIR}/_ext/584742396/Relay.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/sensor1.o.d ${OBJECTDIR}/sensor-main.o.d ${OBJECTDIR}/_ext/584742396/Relay.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/sensor1.o ${OBJECTDIR}/sensor-main.o
+OBJECTFILES=${OBJECTDIR}/sensor1.o ${OBJECTDIR}/sensor-main.o ${OBJECTDIR}/_ext/584742396/Relay.o
 
 # Source Files
-SOURCEFILES=sensor1.c sensor-main.c
+SOURCEFILES=sensor1.c sensor-main.c D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay.c
 
 
 CFLAGS=
@@ -112,6 +112,12 @@ ${OBJECTDIR}/sensor-main.o: sensor-main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/sensor-main.o 
 	@${FIXDEPS} "${OBJECTDIR}/sensor-main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-schedule-insns -fno-schedule-insns2 -MMD -MF "${OBJECTDIR}/sensor-main.o.d" -o ${OBJECTDIR}/sensor-main.o sensor-main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
+${OBJECTDIR}/_ext/584742396/Relay.o: D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/584742396" 
+	@${RM} ${OBJECTDIR}/_ext/584742396/Relay.o.d 
+	@${RM} ${OBJECTDIR}/_ext/584742396/Relay.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/584742396/Relay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-schedule-insns -fno-schedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/584742396/Relay.o.d" -o ${OBJECTDIR}/_ext/584742396/Relay.o D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
 else
 ${OBJECTDIR}/sensor1.o: sensor1.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -124,6 +130,12 @@ ${OBJECTDIR}/sensor-main.o: sensor-main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/sensor-main.o.d 
 	@${RM} ${OBJECTDIR}/sensor-main.o 
 	@${FIXDEPS} "${OBJECTDIR}/sensor-main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-schedule-insns -fno-schedule-insns2 -MMD -MF "${OBJECTDIR}/sensor-main.o.d" -o ${OBJECTDIR}/sensor-main.o sensor-main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/584742396/Relay.o: D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/584742396" 
+	@${RM} ${OBJECTDIR}/_ext/584742396/Relay.o.d 
+	@${RM} ${OBJECTDIR}/_ext/584742396/Relay.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/584742396/Relay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-schedule-insns -fno-schedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/584742396/Relay.o.d" -o ${OBJECTDIR}/_ext/584742396/Relay.o D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 

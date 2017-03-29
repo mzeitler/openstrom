@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>C:/Program Files (x86)/Microchip/xc32/v1.40/pic32mx/include/proc/p32mx795f512h.h</itemPath>
       <itemPath>../STPM34-VC-calibration.X/stdint.h</itemPath>
+      <itemPath>relay.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,6 +17,7 @@
                    projectFiles="true">
       <itemPath>sensor1.c</itemPath>
       <itemPath>sensor-main.c</itemPath>
+      <itemPath>D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -30,6 +32,7 @@
     <Elem>../STPM34-VC-calibration.X</Elem>
     <Elem>../SM-Relaytest.X</Elem>
     <Elem>../Sensor_Scan.X</Elem>
+    <Elem>D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

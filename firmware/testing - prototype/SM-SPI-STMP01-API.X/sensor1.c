@@ -4,17 +4,19 @@
 #include <stdlib.h>
 #include <plib.h>
 #include <p32xxxx.h>
-//#include "sdi.h"
 #include "STPM-define.h"
+#include "relay.h"
 void Delay(void);
+void  Find_ZCR(void);
 //void ReadFrame(unsigned short address, uint32_t * buffer);
 void SendFrame(char readAdd,char writeAdd, char dataLSB,char dataMSB,int port,int _bits);
 void FrameDelay(void);
+void CheckOverCurrent(uint32_t *dataBuf,IoPortId port, unsigned int relayNum);
 /*--------------------------- SPI_Init() routine----------------------------------------*/
 /* PORT/pin Definitions:                                                         */
 /* En   - PIC32-pin45    RD11                                                    */
 /* CS_1 - PIC32-pin8     RG9                                                     */
-/* CS_2 - PIC32-pin11    RG5                                                     */
+/* CS_2 - PIC32-pin11    RB5                                                     */
 /* CS_3 - PIC32-pin12    RB4                                                     */
 /* CS_4 - PIC32-pin14    RB2                                                     */
 /* CS_5 - PIC32-pin13    RB3                                                     */
@@ -88,7 +90,7 @@ void  Init_STPM34(int chnSel,unsigned int port, unsigned int _bits)
    
    
     DSP_CR100bits.ENVREF1=1;         //enable default value for Vref1=1.18v for CH0;  
-    DSP_CR100bits.TC1=0x2;           //set temperature compensation for CH0; Vref1=1.18v default
+    DSP_CR100bits.TC1=0x2;           //set temperature compensation for CHx; Vref1=1.18v default
     
     readAdd=0x00;                   // select dsp_cr1
     writeAdd=0x00; 
@@ -96,8 +98,8 @@ void  Init_STPM34(int chnSel,unsigned int port, unsigned int _bits)
     dataMSB=DSP_CR100bits.MSB;
     SendFrame(readAdd,writeAdd,dataLSB,dataMSB, port,_bits);    //write to  CR1 register
  
-    DSP_CR200bits.ENVREF2=1;         //enable V ref1 bit for CH1;
-    DSP_CR200bits.TC2=0x02;          //set temperature compensation for CH1;  Vref2=1.18v default
+    DSP_CR200bits.ENVREF2=1;         //enable V ref1 bit for CHx;
+    DSP_CR200bits.TC2=0x02;          //set temperature compensation for CHx;  Vref2=1.18v default
     
     readAdd=0x02;
     writeAdd=0x02; 
@@ -170,11 +172,7 @@ void FrameDelay(void)
 void SendFrame(char readAdd,char writeAdd, char dataLSB,char dataMSB,int port,int _bits)
 {
 /* This subroutine sends a SPI frame - 32 bits to the sensor ICs stpm34  */
-    
-  // int port1,bits;
-   
-  // port1=port;
-  // bits=_bits;
+ 
    transferValue=SPI2BUF;                   // clear up the receive Buffer SPI2BUF
    sendBuff[0]=readAdd;
    sendBuff[1]=writeAdd;
@@ -189,14 +187,14 @@ void SendFrame(char readAdd,char writeAdd, char dataLSB,char dataMSB,int port,in
     while(SPI2STATbits.SPITBF==1){}
        SPI2BUF=transferValue;
       FrameDelay();
-      while(SPI2STATbits.SPIRBF==0){}               //bit0=SPIRBF
+//      while(SPI2STATbits.SPIRBF==0){}               //bit0=SPIRBF  23.03.2017
        receiveBuffer=SPI2BUF;
    
    PORTToggleBits(port,_bits);              //deactivate CSx
   
 }
 
-void ReadFrame(unsigned short address, uint32_t *buffer)
+void ReadFrame(unsigned short address, uint32_t *buffer,int port,int _bits)
 {
     uint32_t *tempbuff;
     
@@ -205,7 +203,7 @@ void ReadFrame(unsigned short address, uint32_t *buffer)
     dataLSB=0xff;                                   //dummy byte
     dataMSB=0xff;                                   //dummy byte
 
-    SendFrame(readAdd,writeAdd,dataLSB,dataMSB, 0,0);
+    SendFrame(readAdd,writeAdd,dataLSB,dataMSB, port,_bits);
    //Send Frame
     receiveBuffer=SPI2BUF;
     receiveBuffer=SPI2BUF;
@@ -216,73 +214,72 @@ void ReadFrame(unsigned short address, uint32_t *buffer)
    
       FrameDelay();                         //should be 4uS
     while(SPI2STATbits.SPIRBF==0){}
-         
-      buffer=tempbuff;
-      *buffer=SPI2BUF;
-      tempbuff=buffer+1;                    //increment buffer    
       
-                                              
+      *buffer=SPI2BUF;                      //increment buffer  
+      buffer++;                                      
     mPORTGSetBits(BIT_9);                       //deactivate CS1     
    
 }
-void GetParams(unsigned int  port, unsigned int _bits)
+void GetParams(unsigned int  port, unsigned int _bits, int *buffer,relay_t activeRelay)
 {
-    int i,j,k;
-    uint32_t *tempbuff;
-    for(i=0;i<5;i++)
-          {
+int i,j,k;
+
+   // for(i=0;i<5;i++)
+   //      {
             //1. Read Current and Voltage parameters from Chn[i]
-            port=IOPORT_G;
-            _bits=BIT_9;
-            tempbuff=Buffer[i];
-            parm_Reg[i].Address=V1_Data_Address;     
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);  //read voltage(V1) value from Chn1
+          
+            parm_Reg[i].Address=V1_Data_Address;
+            parm_Reg[i].dataBuffer=buffer;          // 24.03.2017
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);  //read voltage(V1) value from Chn1
            
+            parm_Reg[i].dataBuffer++;
             parm_Reg[i].Address=C1_Data_Address;
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);  //read current(C1) value from Chn1
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits); //read current(C1) value from Chn1
+            
+            CheckOverCurrent(parm_Reg[i].dataBuffer,activeRelay.relayPort1, activeRelay.relayPin1);// if the current is more than 40Amps switch Off relays
             
             parm_Reg[i].Address=V2_Data_Address;                    //read voltage(V2) value from Chn2
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+            parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=C2_Data_Address;                    //read current(C2) value from Chn2
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+            parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
+            
+            CheckOverCurrent(parm_Reg[i].dataBuffer,activeRelay.relayPort2, activeRelay.relayPin2);     // if the current is more than 40Amps switch Off relays
             
             parm_Reg[i].Address=PH1_Active_Energy_Address;          //read PH1 Active energy chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[0].Address,parm_Reg[0].dataBuffer);
+            parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[0].Address,parm_Reg[0].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=PH1_Reactive_Energy_Address;          //read PH1 Reactive energy chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+            parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=PH1_Active_Power_Address;          //read PH1 Power power chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+           parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=PH1_Reactive_Power_Address;          //read PH1 Active power chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+            parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=PH2_Active_Energy_Address;          //read PH2 Active energy chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+             parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=PH2_Reactive_Energy_Address;          //read PH2 Reactive energy chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+            parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=PH2_Active_Power_Address;          //read PH2 Power power chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);
+            parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);
             
             parm_Reg[i].Address=PH2_Reactive_Power_Address;          //read PH2 Active power chn1
-            parm_Reg[i].dataBuffer=Buffer[i];
-            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer);  
-    }
+             parm_Reg[i].dataBuffer++;
+            ReadFrame(parm_Reg[i].Address,parm_Reg[i].dataBuffer,port,_bits);  
+   // }
             
 }
 
@@ -297,7 +294,7 @@ void Relay_CRZ(void)
     unsigned int port;
     unsigned int _bits;
     
-    Init_Relays();               //Initialize Relay OUTPUTS
+//    Init_Relays();               //Initialize Relay OUTPUTS
     SPI_Init();                 //Initialize SPI OUTPUTS
     
     for(i=1;i<6;i++)
@@ -315,7 +312,17 @@ void Relay_CRZ(void)
     SendFrame(readAdd,writeAdd,dataLSB,dataMSB,1,1);
 }
 
-void Find_ZCR(void)
+/*void Find_ZCR(void)
 {
     while(DSP_EV1bits.ZCR!=1){}            // check if the ZCR bit in reg DSP ev1 is set active 
+}*/
+
+void CheckOverCurrent(uint32_t *dataBuf,IoPortId port, unsigned int relayNum)
+{
+    if(*dataBuf>= limitCurrentValue)
+    {
+        Find_ZCR();
+        Switch_ON_Relay( port,relayNum);
+    }
+   
 }

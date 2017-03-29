@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/default/production/OPEN_STROM_01_HARMONY.X.production.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>531968</length>                 
+      <used>6520</used>                     
+      <free>525448</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>131072</length>                 
+      <used>688</used>                     
+      <free>130384</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

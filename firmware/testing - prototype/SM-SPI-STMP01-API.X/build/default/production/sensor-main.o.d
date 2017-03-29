@@ -1,2 +1,3 @@
 build/default/production/sensor-main.o:  \
-sensor-main.c 
+sensor-main.c  \
+relay.h 

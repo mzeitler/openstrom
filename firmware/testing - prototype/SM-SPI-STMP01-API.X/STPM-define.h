@@ -720,6 +720,7 @@ typedef struct{
 /* Parameter's Buffers for Channel-Sensors IC                                          */
     unsigned int chnBuff1=0x55;
     unsigned int chnBuff2;
+    uint32_t limitCurrentValue=0x55555555;          //should calculate the limit current value
 /*-----------------------------------------------------------------------------*/
 /*-----Definition array of structures for parameter registers----------------*/
 /* Members:                                                                  */
@@ -1122,12 +1123,13 @@ DSP_EV1bits_t DSP_EV1bits;
 //activate arrays of parameters structures
 parm_Reg_t parm_Reg[5];
 // declare global variables
+             
 
-uint32_t buf1[10];                  // test the arrays of pointers 21.02.2017
-uint32_t buf2[10];
-uint32_t buf3[10];
-uint32_t buf4[10];
-uint32_t buf5[10];
+//uint32_t buf1[12];              //contains energy params for Channels 1&2               
+//uint32_t buf2[12];              //contains energy params for Channels 3&4 
+//uint32_t buf3[12];              //contains energy params for Channels 5&6 
+//uint32_t buf4[12];              //contains energy params for Channels 7&8 
+//uint32_t buf5[12];              //contains energy params for Channels 9&10 
 /*
 uint32_t buf6[52];
 uint32_t buf7[52];
@@ -1142,7 +1144,7 @@ uint32_t Chn_Buffer5[52];           //this array comprises param froom Ch5&Ch6
 uint32_t Chn_Buffer7[52];           //this array comprises param froom Ch7&Ch8
 uint32_t Chn_Buffer9[52];           //this array comprises param froom Ch9&Ch10 */
 
-int *Buffer[5]={buf1,buf2,buf3,buf4,buf5};         // define an array of pointers to the channel buffers
+//int *Buffer[5]={buf1,buf2,buf3,buf4,buf5};         // define an array of pointers to the channel buffers
 /*
 // Channels energy parameters
 uint32_t *c1Data;
@@ -1220,6 +1222,10 @@ uint16_t v10rms_average=0;
 uint16_t *cxrms;
 uint16_t *vxrms;
 */
+
+unsigned int relayNum1;
+unsigned int relayNum2;
+
 char readAdd,writeAdd;
 char dataLSB,dataMSB;
 int ix;
