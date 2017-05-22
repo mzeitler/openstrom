@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="dist/default/production/SM-SPI-STMP01-API.X.production.elf">                 
+  <executable name="dist/default/production/SM-SPI-STMP04-API.X.production.elf">                 
     <memory name="program">                 
       <units>bytes</units>                 
       <length>531968</length>                 
-      <used>12244</used>                     
-      <free>519724</free>                     
+      <used>14296</used>                     
+      <free>517672</free>                     
     </memory>                              
     <memory name="data">              
       <units>bytes</units>                 
       <length>131072</length>                 
-      <used>672</used>                     
-      <free>130400</free>                     
+      <used>716</used>                     
+      <free>130356</free>                     
     </memory>                              
   </executable>                            
 </project>                                 

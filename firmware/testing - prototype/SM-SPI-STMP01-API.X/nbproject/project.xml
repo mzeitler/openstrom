@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>SM-SPI-STMP01-API</name>
+            <name>SM-SPI-STMP04-API</name>
             <creation-uuid>6296d732-c06c-4634-bc65-4b6dff78e8f7</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

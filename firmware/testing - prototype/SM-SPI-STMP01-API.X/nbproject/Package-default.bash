@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/SM-SPI-STMP01-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=SM-SPI-STMP01-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=sm-spi-stmp01-api.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/SM-SPI-STMP04-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=SM-SPI-STMP04-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=sm-spi-stmp04-api.x/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/sm-spi-stmp01-api.x/bin
+makeDirectory ${TMPDIR}/sm-spi-stmp04-api.x/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/sm-spi-stmp01-api.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/sm-spi-stmp04-api.x.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/sm-spi-stmp01-api.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/sm-spi-stmp04-api.x.tar *
 checkReturnCode
 
 # Cleanup

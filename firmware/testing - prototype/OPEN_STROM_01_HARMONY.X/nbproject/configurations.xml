@@ -107,8 +107,8 @@
         </logicalFolder>
         <itemPath>../src/app.c</itemPath>
         <itemPath>../src/main.c</itemPath>
-        <itemPath>D:/PLIB-Project/SM-SPI-STMP01-API.X/sensor1.c</itemPath>
-        <itemPath>D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X/Relay1.c</itemPath>
+        <itemPath>D:/PLIB-Project/New Folder/SM-SPI-STMP04-API.X/Relay.c</itemPath>
+        <itemPath>D:/PLIB-Project/New Folder/SM-SPI-STMP04-API.X/sensor1.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
         <logicalFolder name="f1" displayName="system" projectFiles="true">
@@ -148,6 +148,7 @@
     <Elem>C:/microchip/harmony/v1_06_02/framework/driver/spi</Elem>
     <Elem>D:/PLIB-Project/SM-Relays-API/SM-Relays-API.X</Elem>
     <Elem>D:/PLIB-Project/STPM34-VC-calibration.X</Elem>
+    <Elem>D:/PLIB-Project/New Folder/SM-SPI-STMP04-API.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

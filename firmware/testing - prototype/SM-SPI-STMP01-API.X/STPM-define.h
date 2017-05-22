@@ -730,8 +730,8 @@ typedef struct{
                                                           
 typedef struct{
 	uint32_t * dataBuffer;
-	unsigned short Row;
-	unsigned short Address;	
+	unsigned short Row;	
+    uint32_t  Address;
 }parm_Reg_t;  
     
 /*-----Definition  for dsp_reg1------------------------------------*/
@@ -748,8 +748,8 @@ typedef struct{
 /* Name: V1_Data[23:0]  
 /* Description:Voltage value for Chn1 in V1_Data Register[23:0]                                                   */
 
-	unsigned short V1_Data_Row=24;
-	unsigned short V1_Data_Address=0x30;	
+	unsigned short V1_Data_Row=28;
+	unsigned short V1_Data_Address=0x38;	
 
 
 /*-----Definition  for dsp_reg3------------------------------------*/
@@ -1121,7 +1121,8 @@ DSP_CR500bits_t DSP_CR500bits;
 DSP_EV1bits_t DSP_EV1bits;
 /*----------------------------------------------------------------------------*/
 //activate arrays of parameters structures
-parm_Reg_t parm_Reg[5];
+//parm_Reg_t parm_Reg[5];
+parm_Reg_t parm_Reg;
 // declare global variables
              
 
@@ -1226,16 +1227,17 @@ uint16_t *vxrms;
 unsigned int relayNum1;
 unsigned int relayNum2;
 
-char readAdd,writeAdd;
-char dataLSB,dataMSB;
+uint32_t  readAdd,writeAdd;
+uint32_t  dataLSB,dataMSB;
 int ix;
-char sendBuff[4];
+uint32_t sendBuff[4];
 char receiveBuff[4];
 //char *pSrc;
 uint32_t *pSrc;
 uint32_t transferValue=0x00000000;
-uint16_t transferValue1=0x0000;
-uint16_t transferValue2=0x0000;
+uint32_t transferValue1=0x00000000;
+uint32_t transferValue2=0x00000000;
+uint32_t transferValue3=0x00000000;
 uint32_t receiveBuffer;
 uint32_t *ptrBuffer;
 char *pRcv;

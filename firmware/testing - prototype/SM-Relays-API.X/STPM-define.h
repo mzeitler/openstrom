@@ -1234,6 +1234,14 @@ uint32_t receiveBuffer;
 uint32_t *ptrBuffer;
 char *pRcv;
 
+//typedef struct
+//{
+  //  IoPORT relayPort;
+  //  int relayPin;
+//}relay_t;
+
+//relay_t activeRelay;
+
 int bits[16]={BIT_0,BIT_1,BIT_2,BIT_3,BIT_4,BIT_5,BIT_6,BIT_7,
               BIT_8,BIT_9,BIT_10,BIT_11,BIT_12,BIT_13,BIT_14,BIT_15};
 

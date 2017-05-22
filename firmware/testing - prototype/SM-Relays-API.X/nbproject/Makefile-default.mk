@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=relays_api.c Relay.c D:/PLIB-Project/SM-SPI-STMP01-API.X/sensor1.c
+SOURCEFILES_QUOTED_IF_SPACED=relaySensor.c main-relay.c Relay1.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/relays_api.o ${OBJECTDIR}/Relay.o ${OBJECTDIR}/_ext/791154003/sensor1.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/relays_api.o.d ${OBJECTDIR}/Relay.o.d ${OBJECTDIR}/_ext/791154003/sensor1.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/relaySensor.o ${OBJECTDIR}/main-relay.o ${OBJECTDIR}/Relay1.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/relaySensor.o.d ${OBJECTDIR}/main-relay.o.d ${OBJECTDIR}/Relay1.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/relays_api.o ${OBJECTDIR}/Relay.o ${OBJECTDIR}/_ext/791154003/sensor1.o
+OBJECTFILES=${OBJECTDIR}/relaySensor.o ${OBJECTDIR}/main-relay.o ${OBJECTDIR}/Relay1.o
 
 # Source Files
-SOURCEFILES=relays_api.c Relay.c D:/PLIB-Project/SM-SPI-STMP01-API.X/sensor1.c
+SOURCEFILES=relaySensor.c main-relay.c Relay1.c
 
 
 CFLAGS=
@@ -100,42 +100,42 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/relays_api.o: relays_api.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/relaySensor.o: relaySensor.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/relays_api.o.d 
-	@${RM} ${OBJECTDIR}/relays_api.o 
-	@${FIXDEPS} "${OBJECTDIR}/relays_api.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/relays_api.o.d" -o ${OBJECTDIR}/relays_api.o relays_api.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/relaySensor.o.d 
+	@${RM} ${OBJECTDIR}/relaySensor.o 
+	@${FIXDEPS} "${OBJECTDIR}/relaySensor.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/relaySensor.o.d" -o ${OBJECTDIR}/relaySensor.o relaySensor.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/Relay.o: Relay.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/main-relay.o: main-relay.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Relay.o.d 
-	@${RM} ${OBJECTDIR}/Relay.o 
-	@${FIXDEPS} "${OBJECTDIR}/Relay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Relay.o.d" -o ${OBJECTDIR}/Relay.o Relay.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/main-relay.o.d 
+	@${RM} ${OBJECTDIR}/main-relay.o 
+	@${FIXDEPS} "${OBJECTDIR}/main-relay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/main-relay.o.d" -o ${OBJECTDIR}/main-relay.o main-relay.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/791154003/sensor1.o: D:/PLIB-Project/SM-SPI-STMP01-API.X/sensor1.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/791154003" 
-	@${RM} ${OBJECTDIR}/_ext/791154003/sensor1.o.d 
-	@${RM} ${OBJECTDIR}/_ext/791154003/sensor1.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/791154003/sensor1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/791154003/sensor1.o.d" -o ${OBJECTDIR}/_ext/791154003/sensor1.o D:/PLIB-Project/SM-SPI-STMP01-API.X/sensor1.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD) 
+${OBJECTDIR}/Relay1.o: Relay1.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/Relay1.o.d 
+	@${RM} ${OBJECTDIR}/Relay1.o 
+	@${FIXDEPS} "${OBJECTDIR}/Relay1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Relay1.o.d" -o ${OBJECTDIR}/Relay1.o Relay1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 else
-${OBJECTDIR}/relays_api.o: relays_api.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/relaySensor.o: relaySensor.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/relays_api.o.d 
-	@${RM} ${OBJECTDIR}/relays_api.o 
-	@${FIXDEPS} "${OBJECTDIR}/relays_api.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/relays_api.o.d" -o ${OBJECTDIR}/relays_api.o relays_api.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/relaySensor.o.d 
+	@${RM} ${OBJECTDIR}/relaySensor.o 
+	@${FIXDEPS} "${OBJECTDIR}/relaySensor.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/relaySensor.o.d" -o ${OBJECTDIR}/relaySensor.o relaySensor.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/Relay.o: Relay.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/main-relay.o: main-relay.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Relay.o.d 
-	@${RM} ${OBJECTDIR}/Relay.o 
-	@${FIXDEPS} "${OBJECTDIR}/Relay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Relay.o.d" -o ${OBJECTDIR}/Relay.o Relay.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/main-relay.o.d 
+	@${RM} ${OBJECTDIR}/main-relay.o 
+	@${FIXDEPS} "${OBJECTDIR}/main-relay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/main-relay.o.d" -o ${OBJECTDIR}/main-relay.o main-relay.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/791154003/sensor1.o: D:/PLIB-Project/SM-SPI-STMP01-API.X/sensor1.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/791154003" 
-	@${RM} ${OBJECTDIR}/_ext/791154003/sensor1.o.d 
-	@${RM} ${OBJECTDIR}/_ext/791154003/sensor1.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/791154003/sensor1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/791154003/sensor1.o.d" -o ${OBJECTDIR}/_ext/791154003/sensor1.o D:/PLIB-Project/SM-SPI-STMP01-API.X/sensor1.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD) 
+${OBJECTDIR}/Relay1.o: Relay1.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/Relay1.o.d 
+	@${RM} ${OBJECTDIR}/Relay1.o 
+	@${FIXDEPS} "${OBJECTDIR}/Relay1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Relay1.o.d" -o ${OBJECTDIR}/Relay1.o Relay1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 
@@ -150,12 +150,12 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/SM-Relays-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -mdebugger -D__MPLAB_DEBUGGER_SIMULATOR=1 -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/SM-Relays-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}          -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)      -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -mdebugger -D__MPLAB_DEBUGGER_ICD3=1 -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/SM-Relays-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}          -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    -mreserve=boot@0x1FC02000:0x1FC02FEF -mreserve=boot@0x1FC02000:0x1FC024FF  -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_ICD3=1,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml
 	
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/SM-Relays-API.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/SM-Relays-API.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}          -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -mprocessor=$(MP_PROCESSOR_OPTION)  -o dist/${CND_CONF}/${IMAGE_TYPE}/SM-Relays-API.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} ${OBJECTFILES_QUOTED_IF_SPACED}          -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -Wl,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_LD_POST)$(MP_LINKER_FILE_OPTION),-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml
 	${MP_CC_DIR}\\xc32-bin2hex dist/${CND_CONF}/${IMAGE_TYPE}/SM-Relays-API.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX} 
 endif
 

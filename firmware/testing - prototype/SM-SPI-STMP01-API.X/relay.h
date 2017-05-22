@@ -58,6 +58,7 @@ typedef struct
     int relayPin2;
 }relay_t;
 relay_t activeRelay;
+relay_t activeRelayArr[5];
     /* ************************************************************************** */
     /** Descriptive Constant Name
 
