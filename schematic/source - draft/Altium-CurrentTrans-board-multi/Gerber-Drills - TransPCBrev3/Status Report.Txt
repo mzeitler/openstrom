@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [CurrentTrans-board-multi.PrjPcb]
+   Generated File[CurrentTrans-board-multi-Plated.TXT]
+   Generated File[CurrentTrans-board-multi.LDP]
+   Generated File[CurrentTrans-board-multi.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 15:10:48 On 20.5.2017 ã.
