@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/tcpip/src/dns.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/system/int/src/sys_int_pic32.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/tcpip/tcpip_mac.h</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/system/tmr/src/sys_tmr.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/tcpip/dns.h</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/driver/usart/src/dynamic/drv_usart.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/system/command/sys_command.h</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/net/pres/src/net_pres.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/tcpip/src/tcpip_commands.c</file>
+            <file>file:/C:/microchip/harmony/works/Ethernet/firmware/src/system_config/default/system_tasks.c</file>
+            <file>file:/C:/microchip/harmony/works/Ethernet/firmware/src/app_command.h</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/system/console/src/sys_console.c</file>
+            <file>file:/C:/microchip/harmony/works/Ethernet/firmware/src/app_command.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/peripheral/int/templates/int_EnableControl_PIC32.h</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/system/command/src/sys_command.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/driver/miim/src/dynamic/drv_miim.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/osal/osal_impl_basic.h</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/driver/ethmac/src/dynamic/drv_ethmac.c</file>
+            <file>file:/C:/microchip/harmony/works/Ethernet/firmware/src/app.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/driver/ethphy/src/dynamic/drv_ethphy.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/tcpip/src/dhcp.c</file>
+            <file>file:/C:/microchip/harmony/works/Ethernet/firmware/src/main.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/tcpip/src/tcpip_manager.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/system/console/src/sys_console_uart.c</file>
+            <file>file:/C:/microchip/harmony/v2_03b/framework/tcpip/src/tcpip_helpers.c</file>
+        </group>
+    </open-files>
+</project-private>

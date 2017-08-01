@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <HarmonyPath dnOrder="0" path="../../v2_03b"/>
+    <Processor dnOrder="1" name="PIC32MX795F512H"/>
+    <Board dnOrder="2" name=" "/>
+    <ForceOptimization dnOrder="3" flag="true"/>
+    <MergeStrategy dnOrder="4" flag="USER_ALL"/>
+  </General>
+  <Manifest>
+    <Files dnOrder="0">
+      <File dnOrder="0">
+        <Name dnOrder="0">sys_random.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/random/src</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">dhcp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">tcpip_helper_c32.S</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">helpers.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/common</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">snmpv3.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">dhcp.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">tcpip_mac.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">helpers.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src/common</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">tcpip_heap_alloc.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">tftpc_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">zero_conf_helper.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">tcpip_helpers_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">tcpip_packet.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_command.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/command/src</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">ipv6_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">tcp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">tls.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">smtpc.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">zero_conf_helper.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">drv_extphy_smsc8700.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header Files/framework/system</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">dnss_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">tcpip_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">oahash.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">tcpip_common_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">ndp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">snmp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">dhcp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">ipv4.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">snmpv3_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">udp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">dns_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">drv_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">net_pres_certstore.h</Name>
+        <Path dnOrder="1">Header Files/framework/net/pres</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">smtpc_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">dns_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">http_net_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">dns.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">sys_command.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/command</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">drv_miim_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/miim/src</Path>
+      </File>
+      <File dnOrder="41">
+        <Name dnOrder="0">sys_console_uart.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="42">
+        <Name dnOrder="0">iperf_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="43">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="44">
+        <Name dnOrder="0">tcpip_reboot.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="45">
+        <Name dnOrder="0">ipv4_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="46">
+        <Name dnOrder="0">nbns.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="47">
+        <Name dnOrder="0">tcpip_packet.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="48">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="49">
+        <Name dnOrder="0">drv_extphy_regs.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="50">
+        <Name dnOrder="0">drv_usart_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="51">
+        <Name dnOrder="0">icmpv6_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="52">
+        <Name dnOrder="0">ipv4.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="53">
+        <Name dnOrder="0">tcpip_announce.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="54">
+        <Name dnOrder="0">tcp.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="55">
+        <Name dnOrder="0">drv_tmr_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="56">
+        <Name dnOrder="0">arp.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="57">
+        <Name dnOrder="0">snmp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="58">
+        <Name dnOrder="0">tcp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="59">
+        <Name dnOrder="0">drv_ethphy_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src</Path>
+      </File>
+      <File dnOrder="60">
+        <Name dnOrder="0">net_pres_socketapiconversion.h</Name>
+        <Path dnOrder="1">Header Files/framework/net/pres</Path>
+      </File>
+      <File dnOrder="61">
+        <Name dnOrder="0">arp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="62">
+        <Name dnOrder="0">tcpip_commands_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="63">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="64">
+        <Name dnOrder="0">aes_ofb.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
+      </File>
+      <File dnOrder="65">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="66">
+        <Name dnOrder="0">aes.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
+      </File>
+      <File dnOrder="67">
+        <Name dnOrder="0">net_pres.h</Name>
+        <Path dnOrder="1">Header Files/framework/net/pres</Path>
+      </File>
+      <File dnOrder="68">
+        <Name dnOrder="0">sys_ports_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="69">
+        <Name dnOrder="0">aes_cbc.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
+      </File>
+      <File dnOrder="70">
+        <Name dnOrder="0">drv_tmr_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="71">
+        <Name dnOrder="0">sys_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="72">
+        <Name dnOrder="0">tcpip_notify.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="73">
+        <Name dnOrder="0">tcpip_mac_object.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="74">
+        <Name dnOrder="0">lldp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="75">
+        <Name dnOrder="0">igmp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="76">
+        <Name dnOrder="0">zero_conf_multicast_dns.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="77">
+        <Name dnOrder="0">dhcps_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="78">
+        <Name dnOrder="0">icmpv6.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="79">
+        <Name dnOrder="0">ipv6.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="80">
+        <Name dnOrder="0">telnet.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="81">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="82">
+        <Name dnOrder="0">drv_miim_config.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/miim/config</Path>
+      </File>
+      <File dnOrder="83">
+        <Name dnOrder="0">smtp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="84">
+        <Name dnOrder="0">nbns.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="85">
+        <Name dnOrder="0">ndp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="86">
+        <Name dnOrder="0">berkeley_api.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="87">
+        <Name dnOrder="0">link_list.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="88">
+        <Name dnOrder="0">lldp_tlv.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="89">
+        <Name dnOrder="0">tcpip_module_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="90">
+        <Name dnOrder="0">drv_usart_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="91">
+        <Name dnOrder="0">drv_extphy_dp83848.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="92">
+        <Name dnOrder="0">tcpip_manager.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="93">
+        <Name dnOrder="0">drv_usart_read_write.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="94">
+        <Name dnOrder="0">tcpip_heap_alloc.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="95">
+        <Name dnOrder="0">arp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="96">
+        <Name dnOrder="0">des3.h</Name>
+        <Path dnOrder="1">Header Files/framework/crypto/src</Path>
+      </File>
+      <File dnOrder="97">
+        <Name dnOrder="0">sys_debug_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/debug/src</Path>
+      </File>
+      <File dnOrder="98">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="99">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="100">
+        <Name dnOrder="0">udp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="101">
+        <Name dnOrder="0">drv_ethmac_lib.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethmac/src/dynamic</Path>
+      </File>
+      <File dnOrder="102">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="103">
+        <Name dnOrder="0">tcpip_announce.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="104">
+        <Name dnOrder="0">tftpc_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="105">
+        <Name dnOrder="0">tcpip_helpers.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="106">
+        <Name dnOrder="0">arp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="107">
+        <Name dnOrder="0">dhcpv6.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="108">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="109">
+        <Name dnOrder="0">aes_ecb_pic32.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
+      </File>
+      <File dnOrder="110">
+        <Name dnOrder="0">igmp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="111">
+        <Name dnOrder="0">drv_extphy_smsc8720.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="112">
+        <Name dnOrder="0">drv_extphy_ip101gr.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="113">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="114">
+        <Name dnOrder="0">nbns_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="115">
+        <Name dnOrder="0">tcpip.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="116">
+        <Name dnOrder="0">drv_miim.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/miim</Path>
+      </File>
+      <File dnOrder="117">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="118">
+        <Name dnOrder="0">sys_console_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="119">
+        <Name dnOrder="0">drv_miim.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/miim/src/dynamic</Path>
+      </File>
+      <File dnOrder="120">
+        <Name dnOrder="0">icmp.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="121">
+        <Name dnOrder="0">drv_tmr_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="122">
+        <Name dnOrder="0">igmp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="123">
+        <Name dnOrder="0">dhcps_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="124">
+        <Name dnOrder="0">net_pres_socketapi.h</Name>
+        <Path dnOrder="1">Header Files/framework/net/pres</Path>
+      </File>
+      <File dnOrder="125">
+        <Name dnOrder="0">sys_console_uart.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="126">
+        <Name dnOrder="0">ipv4_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="127">
+        <Name dnOrder="0">sys_fs.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/fs</Path>
+      </File>
+      <File dnOrder="128">
+        <Name dnOrder="0">tmr_definitions_pic32m.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
+      </File>
+      <File dnOrder="129">
+        <Name dnOrder="0">tcpip_commands.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="130">
+        <Name dnOrder="0">zero_conf_link_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="131">
+        <Name dnOrder="0">icmp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="132">
+        <Name dnOrder="0">tcpip_types.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="133">
+        <Name dnOrder="0">berkeley_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="134">
+        <Name dnOrder="0">http_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="135">
+        <Name dnOrder="0">drv_extphy_dp83640.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="136">
+        <Name dnOrder="0">icmp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="137">
+        <Name dnOrder="0">smtp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="138">
+        <Name dnOrder="0">sys_console.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/console</Path>
+      </File>
+      <File dnOrder="139">
+        <Name dnOrder="0">ndp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="140">
+        <Name dnOrder="0">snmp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="141">
+        <Name dnOrder="0">udp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="142">
+        <Name dnOrder="0">drv_ethphy.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/ethphy</Path>
+      </File>
+      <File dnOrder="143">
+        <Name dnOrder="0">net_pres_transportapi.h</Name>
+        <Path dnOrder="1">Header Files/framework/net/pres</Path>
+      </File>
+      <File dnOrder="144">
+        <Name dnOrder="0">smtpc_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="145">
+        <Name dnOrder="0">hash_fnv.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="146">
+        <Name dnOrder="0">sys_random_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/random/src</Path>
+      </File>
+      <File dnOrder="147">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="148">
+        <Name dnOrder="0">sys_tmr.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/tmr</Path>
+      </File>
+      <File dnOrder="149">
+        <Name dnOrder="0">udp.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="150">
+        <Name dnOrder="0">tcpip_notify.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="151">
+        <Name dnOrder="0">lldp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="152">
+        <Name dnOrder="0">tcpip_helpers.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="153">
+        <Name dnOrder="0">sys_random.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/random</Path>
+      </File>
+      <File dnOrder="154">
+        <Name dnOrder="0">http.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="155">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="156">
+        <Name dnOrder="0">tcpip_manager_control.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="157">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header Files/framework/osal</Path>
+      </File>
+      <File dnOrder="158">
+        <Name dnOrder="0">ddns.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="159">
+        <Name dnOrder="0">tcpip_heap.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="160">
+        <Name dnOrder="0">tcpip_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="161">
+        <Name dnOrder="0">aes_cfb.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
+      </File>
+      <File dnOrder="162">
+        <Name dnOrder="0">aes_ecb.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
+      </File>
+      <File dnOrder="163">
+        <Name dnOrder="0">net_pres.c</Name>
+        <Path dnOrder="1">Source Files/framework/net/pres/src</Path>
+      </File>
+      <File dnOrder="164">
+        <Name dnOrder="0">hash_fnv.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="165">
+        <Name dnOrder="0">drv_ethmac.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethmac</Path>
+      </File>
+      <File dnOrder="166">
+        <Name dnOrder="0">lldp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="167">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver</Path>
+      </File>
+      <File dnOrder="168">
+        <Name dnOrder="0">drv_extphy_smsc9303.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="169">
+        <Name dnOrder="0">sys_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/tmr/src</Path>
+      </File>
+      <File dnOrder="170">
+        <Name dnOrder="0">tcp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="171">
+        <Name dnOrder="0">tcpip_commands.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="172">
+        <Name dnOrder="0">drv_ethmac.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/ethmac</Path>
+      </File>
+      <File dnOrder="173">
+        <Name dnOrder="0">ddns_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="174">
+        <Name dnOrder="0">ftp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="175">
+        <Name dnOrder="0">drv_ethmac_lib.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/ethmac</Path>
+      </File>
+      <File dnOrder="176">
+        <Name dnOrder="0">dhcp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="177">
+        <Name dnOrder="0">http_net.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="178">
+        <Name dnOrder="0">sntp.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="179">
+        <Name dnOrder="0">drv_usart_buffer_queue.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="180">
+        <Name dnOrder="0">zero_conf_link_local.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="181">
+        <Name dnOrder="0">net_pres_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/net/pres/src</Path>
+      </File>
+      <File dnOrder="182">
+        <Name dnOrder="0">tcpip_announce_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="183">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="184">
+        <Name dnOrder="0">dhcps.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="185">
+        <Name dnOrder="0">dnss_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="186">
+        <Name dnOrder="0">tcpip_heap_internal.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="187">
+        <Name dnOrder="0">dns.c</Name>
+        <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="188">
+        <Name dnOrder="0">aes_ctr.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
+      </File>
+      <File dnOrder="189">
+        <Name dnOrder="0">drv_tmr.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/tmr/src/dynamic</Path>
+      </File>
+      <File dnOrder="190">
+        <Name dnOrder="0">drv_extphy_smsc8740.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="191">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="192">
+        <Name dnOrder="0">drv_extphy_smsc8720.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/ethphy</Path>
+      </File>
+      <File dnOrder="193">
+        <Name dnOrder="0">drv_usart.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/usart</Path>
+      </File>
+      <File dnOrder="194">
+        <Name dnOrder="0">iperf.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="195">
+        <Name dnOrder="0">tcpip_ethernet.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="196">
+        <Name dnOrder="0">zero_conf_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="197">
+        <Name dnOrder="0">net_pres_encryptionproviderapi.h</Name>
+        <Path dnOrder="1">Header Files/framework/net/pres</Path>
+      </File>
+      <File dnOrder="198">
+        <Name dnOrder="0">zero_conf_link_local_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="199">
+        <Name dnOrder="0">_eth_dcpt_lists.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethmac/src/dynamic</Path>
+      </File>
+      <File dnOrder="200">
+        <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
+      </File>
+      <File dnOrder="201">
+        <Name dnOrder="0">sntp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="202">
+        <Name dnOrder="0">sys_console.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/console/src</Path>
+      </File>
+      <File dnOrder="203">
+        <Name dnOrder="0">drv_ethphy.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy</Path>
+      </File>
+      <File dnOrder="204">
+        <Name dnOrder="0">http_net_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="205">
+        <Name dnOrder="0">drv_extphy_ksz8061.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethphy/src/dynamic</Path>
+      </File>
+      <File dnOrder="206">
+        <Name dnOrder="0">tftpc.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="207">
+        <Name dnOrder="0">ftp_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="208">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="209">
+        <Name dnOrder="0">dnss.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip</Path>
+      </File>
+      <File dnOrder="210">
+        <Name dnOrder="0">drv_usart.c</Name>
+        <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="211">
+        <Name dnOrder="0">tcpip_reboot_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="212">
+        <Name dnOrder="0">dhcpv6_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="213">
+        <Name dnOrder="0">drv_ethmac_local.h</Name>
+        <Path dnOrder="1">Header Files/framework/driver/ethmac/src</Path>
+      </File>
+      <File dnOrder="214">
+        <Name dnOrder="0">dhcpv6_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="215">
+        <Name dnOrder="0">ftp_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="216">
+        <Name dnOrder="0">sys_debug.c</Name>
+        <Path dnOrder="1">Source Files/framework/system/debug/src</Path>
+      </File>
+      <File dnOrder="217">
+        <Name dnOrder="0">oahash.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="218">
+        <Name dnOrder="0">http_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="219">
+        <Name dnOrder="0">telnet_manager.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="220">
+        <Name dnOrder="0">ipv6_private.h</Name>
+        <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+    </Files>
+    <Templates dnOrder="1">
+      <Template dnOrder="0">
+        <Name dnOrder="0">sys_ports_static.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default/framework/system/ports/src</Path>
+        <Checksum dnOrder="2">BD149D7E9B670BA82014F302FACCE5CB</Checksum>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">system_init.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">C9F25DB6815D562CF01C527ADF5A0A42</Checksum>
+      </Template>
+      <Template dnOrder="2">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="3">
+        <Name dnOrder="0">net_pres_enc_glue.h</Name>
+        <Path dnOrder="1">Header Files/app/system_config/default/framework/net/pres</Path>
+        <Checksum dnOrder="2">E9CAC33A51432E13895C3950315DC5F5</Checksum>
+      </Template>
+      <Template dnOrder="4">
+        <Name dnOrder="0">system_definitions.h</Name>
+        <Path dnOrder="1">Header Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">EA20E74D9DF36A7AB72DBB77D0203BCB</Checksum>
+      </Template>
+      <Template dnOrder="5">
+        <Name dnOrder="0">system_exceptions.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">sys_reset.h</Name>
+        <Path dnOrder="1">Header Files/app/system_config/default/framework/system/reset</Path>
+        <Checksum dnOrder="2">D95F1C77374930E09FAA111D21B6391A</Checksum>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">54ADBD4A35BCA03C42C74182FCE41849</Checksum>
+      </Template>
+      <Template dnOrder="8">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source Files/app</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">B66F9B4DBD85DA7F9DE775E864E01395</Checksum>
+      </Template>
+      <Template dnOrder="10">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header Files/app/system_config/default/framework/system/devcon</Path>
+        <Checksum dnOrder="2">07580DCDEF89D9C79B062544109C5367</Checksum>
+      </Template>
+      <Template dnOrder="11">
+        <Name dnOrder="0">sys_reset.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default/framework/system/reset/src</Path>
+        <Checksum dnOrder="2">BE66429899862E1E38250CA4006D5F46</Checksum>
+      </Template>
+      <Template dnOrder="12">
+        <Name dnOrder="0">system_tasks.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">FF25BB807AEF5D0015D98821582D1DDB</Checksum>
+      </Template>
+      <Template dnOrder="13">
+        <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">5141464248E33ABE9E7D144A2D4DC129</Checksum>
+      </Template>
+      <Template dnOrder="14">
+        <Name dnOrder="0">net_pres_enc_glue.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default/framework/net/pres</Path>
+        <Checksum dnOrder="2">F299EB5298C761844925061277D5E36E</Checksum>
+      </Template>
+      <Template dnOrder="15">
+        <Name dnOrder="0">system_config.h</Name>
+        <Path dnOrder="1">Header Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">F596FC94A5016DDC4A8D04BB80B9D371</Checksum>
+      </Template>
+      <Template dnOrder="16">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header Files/app</Path>
+      </Template>
+      <Template dnOrder="17">
+        <Name dnOrder="0">system_interrupt.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">1680FC27C78BA741C8C026AD7922DFF0</Checksum>
+      </Template>
+      <Template dnOrder="18">
+        <Name dnOrder="0">sys_clk_pic32mx.c</Name>
+        <Path dnOrder="1">Source Files/app/system_config/default/framework/system/clk/src</Path>
+        <Checksum dnOrder="2">FDF6C8068CFFAEEC5F8537A8D6514230</Checksum>
+      </Template>
+    </Templates>
+    <CompilerItems dnOrder="2">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="C:\microchip\harmony\works\Ethernet\firmware\src"/>
+        <Include dnOrder="1" value="C:\microchip\harmony\works\Ethernet\firmware\src\system_config\default"/>
+        <Include dnOrder="2" value="C:\microchip\harmony\works\Ethernet\firmware\src\default"/>
+        <Include dnOrder="3" value="C:\microchip\harmony\v2_03b\framework"/>
+        <Include dnOrder="4" value="C:\microchip\harmony\works\Ethernet\firmware\src\system_config\default\framework"/>
+      </C32>
+    </CompilerItems>
+    <Libraries dnOrder="3">
+      <Library dnOrder="0" value="../../../../v2_03b/bin/framework/peripheral/PIC32MX795F512H_peripherals.a"/>
+    </Libraries>
+  </Manifest>
+</Configuration>
