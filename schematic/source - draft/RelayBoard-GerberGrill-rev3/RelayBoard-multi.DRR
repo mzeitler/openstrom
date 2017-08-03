@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: RelayBoard-multi.PcbDoc   26.7.2017 ã.  9:37:05
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : RelayBoard-multi.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        28mil (0.7112mm)         Round          9                6.87 Inch (174.39 mm)
+T2        35mil (0.889mm)          Round          48               4.76 Inch (120.88 mm)
+T3        39mil (0.9906mm)         Round          20               13.54 Inch (343.88 mm)
+T4        51mil (1.2954mm)         Round          4                0.61 Inch (15.40 mm)
+T5        79mil (2.0066mm)         Round          30               23.20 Inch (589.23 mm)
+T6        87mil (2.2098mm)         Round          64               39.98 Inch (1015.55 mm)
+T7        157mil (3.9878mm)        Round          8                10.93 Inch (277.57 mm)
+---------------------------------------------------------------------------
+Totals                                            183              99.88 Inch (2536.90 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

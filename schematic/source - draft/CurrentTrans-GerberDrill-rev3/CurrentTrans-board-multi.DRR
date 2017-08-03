@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: CurrentTrans-board-multi.PcbDoc   26.7.2017 ã.  9:31:19
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : CurrentTrans-board-multi.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        28mil (0.7112mm)         Round          5                1.91 Inch (48.50 mm)
+T2        47mil (1.1938mm)         Round          53               26.40 Inch (670.54 mm)
+T3        157mil (3.9878mm)        Round          12               14.02 Inch (356.21 mm)
+---------------------------------------------------------------------------
+Totals                                            70               42.33 Inch (1075.25 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
